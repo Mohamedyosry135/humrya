@@ -1,0 +1,168 @@
+dependencies:
+  cached_network_image: ^3.2.3
+  cupertino_icons: ^1.0.2
+  dio: ^4.0.5
+  drop_shadow: ^0.0.1+4
+  drop_shadow_image: ^0.9.1
+  flutter:
+    sdk: flutter
+  flutter_cache_manager: ^3.3.0
+  flutter_countdown_timer: ^4.1.0
+  flutter_datetime_picker: ^1.5.1
+  easy_pdf_viewer: ^1.0.6
+  path_provider: ^2.0.15
+  flutter_html: ^0.8.2
+  flutter_otp_text_field: ^1.1.1
+  flutter_spinkit: ^5.1.0
+  flutter_svg: ^1.1.6
+  get: ^4.6.5
+  flutter_rating_bar: ^4.0.1
+  get_storage: ^2.0.3
+  html_unescape: ^2.0.0
+  image_picker: ^0.8.0+4
+  intl: ^0.17.0
+  otp_text_field: ^1.1.3
+  persistent_bottom_nav_bar: ^5.0.2
+  pin_code_fields: ^7.4.0
+  pinch_zoom: ^1.0.0
+  shared_preferences: ^2.0.12
+  table_calendar: ^3.0.8
+  url_launcher: ^6.1.10
+  validators: ^3.0.00
+  firebase_auth:
+  firebase_core:
+  google_sign_in:
+  youtube_player_flutter: ^8.1.2
+  firebase_database: ^10.2.3
+description: A new Flutter project.
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.5.3+2
+  flutter_test:
+    sdk: flutter
+environment:
+  sdk: '>=2.17.1 <3.0.0'
+flutter:
+  assets:
+  - assets/images/logo1.png
+  - assets/images/hmed_ghder.png
+  - assets/images/logo3.png
+  - assets/images/capture.png
+  - assets/images/iso1.png
+  - assets/images/my_ticket.png
+  - assets/images/individual.png
+  - assets/images/iso3.png
+  - assets/images/maged.png
+  - assets/images/video_cover1.png
+  - assets/images/gallery3.png
+  - assets/images/hotel.png
+  - assets/images/sportsGallery4.png
+  - assets/images/Vector.png
+  - assets/images/player3.png
+  - assets/images/mohamed_abed.png
+  - assets/images/news_image2.png
+  - assets/images/ceo.png
+  - assets/images/edit.png
+  - assets/images/futsalPlayer.png
+  - assets/images/hmed_elshamsy.png
+  - assets/images/ground.png
+  - assets/images/nav_icon2.png
+  - assets/images/emirates.png
+  - assets/images/amar.png
+  - assets/images/splash_text.png
+  - assets/images/activity.png
+  - assets/images/exit.png
+  - assets/images/rental.png
+  - assets/images/red_card_icon.png
+  - assets/images/sportsGallery1.png
+  - assets/images/splash_logo.png
+  - assets/images/sportsGallery2.png
+  - assets/images/photo.png
+  - assets/images/stadium_small2.png
+  - assets/images/clock_icon.png
+  - assets/images/sharqaClubsGallery.png
+  - assets/images/about_icon.png
+  - assets/images/iso2.png
+  - assets/images/background_image.png
+  - assets/images/gallery1.png
+  - assets/images/mini_flag.png
+  - assets/images/nav_icon1.png
+  - assets/images/achieve1.png
+  - assets/images/club_flag2.png
+  - assets/images/suggestions.png
+  - assets/images/frame.png
+  - assets/images/nav_logo.png
+  - assets/images/achieve2.png
+  - assets/images/futsalPlayer2.png
+  - assets/images/goall_icon.png
+  - assets/images/logo_faded.png
+  - assets/images/mohamed_rashed.png
+  - assets/images/date.png
+  - assets/images/people.png
+  - assets/images/player4.png
+  - assets/images/ball1.png
+  - assets/images/sharqaClubsGallery2.png
+  - assets/images/team.png
+  - assets/images/video_cover2.png
+  - assets/images/museum.png
+  - assets/images/cup.png
+  - assets/images/news_image.png
+  - assets/images/demo.png
+  - assets/images/book.png
+  - assets/images/logo.png
+  - assets/images/qr_code.png
+  - assets/images/request.png
+  - assets/images/video_play.png
+  - assets/images/player.png
+  - assets/images/nav_icon4.png
+  - assets/images/club_flag3.png
+  - assets/images/club_flag1.png
+  - assets/images/gallery4.png
+  - assets/svg_icons/
+  - assets/images/yellow_card_icon.png
+  - assets/images/calender.png
+  - assets/images/logo2.png
+  - assets/images/help_icon.png
+  - assets/images/twitter.png
+  - assets/images/sportsGallery3.png
+  - assets/images/playerCircelImage.png
+  - assets/images/nav_icon3.png
+  - assets/images/futsalPlayer3.png
+  - assets/images/brazil.png
+  - assets/images/logo4.png
+  - assets/images/player2.png
+  - assets/images/salem.png
+  - assets/images/ball.png
+  - assets/images/player_dialog.png
+  - assets/images/setting_icon.png
+  - assets/images/flag_x.png
+  - assets/images/Facebook.png
+  - assets/images/club_flag4.png
+  - assets/images/arrow_setting.png
+  - assets/images/stadium.png
+  - assets/images/insta.png
+  - assets/images/summer.png
+  - assets/images/add_room.png
+  - assets/images/flag.png
+  - assets/
+  - assets/images/iso4.png
+  - assets/images/ball_icon.png
+  - assets/images/splash.png
+  - assets/images/stadium_small.png
+  - assets/images/logo_x.png
+  - assets/images/hmed.png
+  - assets/images/two_playes_faded.png
+  - assets/images/gallery2.png
+  - assets/images/player1.png
+  - assets/images/apple_logo.png
+  - assets/policy.pdf
+  fonts:
+  - family: almarai
+    fonts:
+    - asset: assets/fonts/almarai.ttf
+  uses-material-design: true
+name: example_structure
+publish_to: none
+version: 1.0.0+1

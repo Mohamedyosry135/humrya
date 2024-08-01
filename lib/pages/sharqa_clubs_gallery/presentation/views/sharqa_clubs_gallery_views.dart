@@ -1,0 +1,84 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../consts/text_styles.dart';
+import '../../../../resources/assets_generated.dart';
+import '../../../../resources/assets_svg_generated.dart';
+import '../../../../widgets/custom_text.dart';
+import '../../../../widgets/home_appbar.dart';
+import '../controllers/sharqa_clubs_gallery_controller.dart';
+
+
+class SharqaClubsGalleryView extends GetView<SharqaClubsGalleryController> {
+bool? isFutsal = false;
+SharqaClubsGalleryView({super.key, this.isFutsal});
+  List sharqaClubsGallery = [
+    AppAssets.sharqaClubsGallery,
+    AppAssets.sharqaClubsGallery2,
+    AppAssets.sharqaClubsGallery,
+    AppAssets.sharqaClubsGallery2,
+
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xffF5F5F5),
+      appBar: HomeAppBar(
+        height: 120.h,
+        child: Padding(
+          padding: EdgeInsets.only(
+              bottom: 33.0.h, left: 30.w, right: 30.w, top: 66.h),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Opacity(
+                opacity: 0,
+                child: SvgPicture.asset(AppSVGAssets.back),
+              ),
+              CustomText(
+                'صور كأس أندية الشارقة',
+                textAlign: TextAlign.center,
+                textStyle: TextStyles.text22.copyWith(fontSize: 20.sp),
+              ),
+              InkWell(
+                  onTap: () {
+                    Get.back();
+                    // PersistentNavBarNavigator.pushNewScreen(
+                    //   context,
+                    //   screen: isFutsal == true ? FutsalGalleryView(): GalleryView(),
+                    //   withNavBar: true, // OPTIONAL VALUE. True by default.
+                    //   pageTransitionAnimation:
+                    //   PageTransitionAnimation.fade,
+                    // );
+                    // Get.find<MainViewController>().navController.value =
+                    //     PersistentTabController(initialIndex: 2);
+                    // Get.find<MainViewController>().navIndex.value = 2;
+                  },
+                  child: SvgPicture.asset(AppSVGAssets.back)),
+            ],
+          ),
+        ),
+      ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 16.0.h, horizontal: 22.w),
+        child:
+        ListView.separated(
+            physics: const BouncingScrollPhysics(),
+            itemBuilder: (BuildContext context, int index) {
+              return ClipRRect(
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                borderRadius: BorderRadius.circular(15.r),
+                child: Image(image: sharqaClubsGallery[index],
+                  height: 186.h,
+                  width: 314.w,
+                fit: BoxFit.fill,),
+              );
+            },
+            separatorBuilder:(BuildContext context, int index) =>  Divider( height: 16.h,),
+            itemCount: sharqaClubsGallery.length),
+      ),
+    );
+  }
+}

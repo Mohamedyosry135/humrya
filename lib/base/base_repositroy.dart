@@ -1,0 +1,21 @@
+
+
+
+
+
+
+class BaseRepository  {
+
+  String  getErrorMessage(String apiResponse) {
+    // final responseJson = const JsonDecoder().convert(apiResponse);
+    // ApiErrorResponse errorResponse = ApiErrorResponse.fromJson(responseJson);
+    if(apiResponse.isNotEmpty) {
+      print("BASE $apiResponse");
+      return apiResponse ;
+    } else {
+      print("BASE $apiResponse");
+
+      return "Something went wrong please try again later" ;
+    }
+  }
+}
