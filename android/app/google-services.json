@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675829404818",
+    "project_id": "humrya-de82b",
+    "storage_bucket": "humrya-de82b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675829404818:android:809a9534196707ce35824b",
+        "android_client_info": {
+          "package_name": "com.alhamriyah.v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675829404818-o85blosolmaq947ut3pnprel020u4bp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDby_sJftRmgUTYxMzAUqvVekzSBa03naA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675829404818-o85blosolmaq947ut3pnprel020u4bp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
